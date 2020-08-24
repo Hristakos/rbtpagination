@@ -14,10 +14,8 @@ const data = [
 // Here you can specify what properties you want to search by
 // label is what is to be displayed as option in dropdown list
 const searchBy = [
-  [
-    { label: 'Name', key: 'name' },
-    { label: 'Email', key: 'email' }
-  ]
+  { label: 'Name', key: 'name' },
+  { label: 'Email', key: 'email' }
 ]
 // Here you can specify which keys of dataset you want to display and label is
 // The table column heading
@@ -34,7 +32,7 @@ const App = () => {
       searchData={searchBy}
       tableData={tableData}
       handleItemClick={false}
-      itemClickRedirect={false}
+      itemClickRedirect={''}
       itemsPerPage={10}
     />
   )

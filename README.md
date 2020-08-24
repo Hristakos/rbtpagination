@@ -33,10 +33,8 @@ const data = [
 // Here you can specify what properties you want to search by
 // label is what is to be displayed as option in dropdown list
 const searchBy = [
-  [
-    { label: 'Name', key: 'name' },
-    { label: 'Email', key: 'email' }
-  ]
+  { label: 'Name', key: 'name' },
+  { label: 'Email', key: 'email' }
 ]
 // Here you can specify which keys of dataset you want to display and label is
 // The table column heading. Gives flexibilty not to add all items from data.
@@ -47,7 +45,7 @@ const tableData = [
   { label: 'Street Address', key: 'address' }
 ]
 
-// Handle item click allow you to make each ro clickable and itemClickRedirect is the route
+// Handle item click allow you to make each row clickable and itemClickRedirect is the route
 // you want to go to like an edit screen and the data for the item will be passed accross.
 
 // Items per page default values to paginate
@@ -58,7 +56,7 @@ const App = () => {
       searchData={searchBy}
       tableData={tableData}
       handleItemClick={false}
-      itemClickRedirect={false}
+      itemClickRedirect={''}
       itemsPerPage={10}
     />
   )

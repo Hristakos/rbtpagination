@@ -31,6 +31,7 @@ function PaginationTable({
   itemClickRedirect,
   itemsPerPage
 }) {
+  console.log('search data = ' + searchData.length)
   const [dataList, setDataList] = useState(dataSet) // ful of data passed in.
   const [filteredDataList, setFilteredDataList] = useState([]) // list og items that meet seacrh criteria
   const [searchCriteria, setSearchCriteria] = useState(searchData[0]) // Search by
